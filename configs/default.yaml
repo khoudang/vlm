@@ -1,0 +1,12 @@
+project: industrial-anomaly
+model:
+  id: HuggingFaceTB/SmolVLM-256M-Instruct
+  device: cpu
+  max_new_tokens: 128
+video:
+  sample_fps: 1
+  max_frames: 30
+  resize_width: 512
+alert:
+  mqtt_topic: vlm/events/anomaly
+  manual_review_required: true

@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+*.log
+.DS_Store
+# Never commit datasets, checkpoints, or raw videos
+data/
+outputs/
+runs/
+checkpoints/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pt
+*.pth
+*.safetensors

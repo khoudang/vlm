@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlm-iot-lab"
+version = "0.1.0"
+description = "Modular video VLM and IoT research starter"
+requires-python = ">=3.10"
+dependencies = ["opencv-python>=4.8,<5", "numpy>=1.24,<3", "pydantic>=2,<3", "paho-mqtt>=2,<3"]
+
+[project.optional-dependencies]
+vlm = ["torch", "transformers>=4.50", "accelerate", "pillow"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
